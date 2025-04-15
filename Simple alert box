@@ -1,0 +1,3 @@
+function orderProduct(name, price) {
+  alert(name + " ৳" + price + " প্রোডাক্ট অর্ডার করার জন্য ফর্মে যাবেন।");
+}
