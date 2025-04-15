@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Badar Sunnah Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js"></script>
+</head>
+<body onload="checkLogin()">
+    <h1>Admin Panel</h1>
+    <div id="login">
+        <input type="password" id="adminPassword" placeholder="Enter Admin Password">
+        <button onclick="login()">Login</button>
+    </div>
+    <div id="adminArea" style="display:none;">
+        <h2>Add New Product</h2>
+        <input type="text" id="newProduct" placeholder="Product Name">
+        <button onclick="addProduct()">Add</button>
+        <h2>All Products</h2>
+        <ul id="productList"></ul>
+    </div>
+    <script>
+        function checkLogin() {
+            if (localStorage.getItem("loggedIn") === "true") {
+                document.getElementById("login").style.display = "none";
+                document.getElementById("adminArea").style.display = "block";
+                loadProducts();
+            }
+        }
+
+        function login() {
+            const pass = document.getElementById("adminPassword").value;
+            if (pass === "Rahat132645***") {
+                localStorage.setItem("loggedIn", "true");
+                checkLogin();
+            } else {
+                alert("Wrong password!");
+            }
+        }
+
+        function addProduct() {
+            const product = document.getElementById("newProduct").value;
+            if (!product) return;
+            let products = JSON.parse(localStorage.getItem("products") || "[]");
+            products.push({ name: product });
+            localStorage.setItem("products", JSON.stringify(products));
+            loadProducts();
+        }
+
+        function loadProducts() {
+            let products = JSON.parse(localStorage.getItem("products") || "[]");
+            const list = document.getElementById("productList");
+            list.innerHTML = "";
+            products.forEach(p => {
+                const li = document.createElement("li");
+                li.textContent = p.name;
+                list.appendChild(li);
+            });
+        }
+    </script>
+</body>
+          </html>
