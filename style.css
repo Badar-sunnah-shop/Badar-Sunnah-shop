@@ -1,8 +1,9 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Amiri', serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  color: #2c3e50;
 }
 
 header {
@@ -53,7 +54,7 @@ header img.logo {
 }
 
 .product-card button {
-  background-color: #004d4d;
+  background-color: #008080;
   color: white;
   border: none;
   padding: 10px;
@@ -63,5 +64,18 @@ header img.logo {
 }
 
 .product-card button:hover {
-  background-color: #008080;
-    }
+  background-color: #004d4d;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #004d4d;
+  color: white;
+}
+
+.quote {
+  font-size: 18px;
+  color: #004d4d;
+  margin-top: 20px;
+  }
