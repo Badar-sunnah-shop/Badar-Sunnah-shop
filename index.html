@@ -1,37 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Badar Sunnah Shop</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Badar Sunnah Shop</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Badar Sunnah Shop Logo">
-        <nav>
-            <ul>
-                <li><a href="#panjabi">Panjabi</a></li>
-                <li><a href="#jubba">Jubba</a></li>
-                <li><a href="#topi">Topi</a></li>
-                <li><a href="#attar">Attar</a></li>
-                <li><a href="#dawa-cap">Dawa Cap</a></li>
-                <li><a href="#miswak">Miswak</a></li>
-                <li><a href="#combo-offers">Combo Offers</a></li>
-                <li><a href="#fan">Fan</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <img src="logo.png" alt="Badar Sunnah Shop Logo" class="logo">
+    <h1>Badar Sunnah Shop</h1>
+  </header>
 
-    <main>
-        <section id="products">
-            <h1>Welcome to Badar Sunnah Shop</h1>
-            <p>Your one-stop shop for Islamic products.</p>
-        </section>
-    </main>
+  <main>
+    <section class="product-grid">
 
-    <footer>
-        <p>&copy; 2025 Badar Sunnah Shop</p>
-    </footer>
+      <!-- Product 1: পাঞ্জাবি -->
+      <div class="product-card">
+        <img src="images/panjabi.jpg" alt="Panjabi">
+        <h3>পাঞ্জাবি</h3>
+        <p>মূল্য: ৳850</p>
+        <button onclick="orderProduct('পাঞ্জাবি', 850)">অর্ডার করুন</button>
+      </div>
+
+      <!-- Product 2: জুব্বা -->
+      <div class="product-card">
+        <img src="images/jubba.jpg" alt="Jubba">
+        <h3>জুব্বা</h3>
+        <p>মূল্য: ৳1200</p>
+        <button onclick="orderProduct('জুব্বা', 1200)">অর্ডার করুন</button>
+      </div>
+
+      <!-- Product 3: টুপি -->
+      <div class="product-card">
+        <img src="images/topi.jpg" alt="Topi">
+        <h3>টুপি</h3>
+        <p>মূল্য: ৳100</p>
+        <button onclick="orderProduct('টুপি', 100)">অর্ডার করুন</button>
+      </div>
+
+      <!-- Product 4: আতর -->
+      <div class="product-card">
+        <img src="images/attar.jpg" alt="Attar">
+        <h3>আতর</h3>
+        <p>মূল্য: ৳250</p>
+        <button onclick="orderProduct('আতর', 250)">অর্ডার করুন</button>
+      </div>
+
+      <!-- Product 5: দাওয়া ক্যাপ -->
+      <div class="product-card">
+        <img src="images/dawa-cap.jpg" alt="Dawa Cap">
+        <h3>দাওয়া ক্যাপ</h3>
+        <p>মূল্য: ৳180</p>
+        <button onclick="orderProduct('দাওয়া ক্যাপ', 180)">অর্ডার করুন</button>
+      </div>
+
+      <!-- Product 6: মেসওয়াক -->
+      <div class="product-card">
+        <img src="images/miswak.jpg" alt="Miswak">
+        <h3>মেসওয়াক</h3>
+        <p>মূল্য: ৳60</p>
+        <button onclick="orderProduct('মেসওয়াক', 60)">অর্ডার করুন</button>
+      </div>
+
+      <!-- Product 7: কম্বো অফার -->
+      <div class="product-card">
+        <img src="images/combo.jpg" alt="Combo Offer">
+        <h3>কম্বো অফার</h3>
+        <p>মূল্য: ৳1500</p>
+        <button onclick="orderProduct('কম্বো অফার', 1500)">অর্ডার করুন</button>
+      </div>
+
+      <!-- Product 8: ফ্যান -->
+      <div class="product-card">
+        <img src="images/fan.jpg" alt="Fan">
+        <h3>ফ্যান</h3>
+        <p>মূল্য: ৳1200</p>
+        <button onclick="orderProduct('ফ্যান', 1200)">অর্ডার করুন</button>
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    function orderProduct(name, price) {
+      alert(name + " ৳" + price + " প্রোডাক্ট অর্ডার করার জন্য ফর্মে যাবেন।");
+      // অর্ডার ফর্ম বা অন্য কোথাও রিডিরেক্ট করতে হবে
+    }
+  </script>
 </body>
           </html>
