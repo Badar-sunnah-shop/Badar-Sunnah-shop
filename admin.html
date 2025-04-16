@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Badar Sunnah Shop Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2e6c7b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            width: 48%;
+            box-sizing: border-box;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .card button {
+            background-color: #2e6c7b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #1f4d56;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2e6c7b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Badar Sunnah Shop - Admin Panel</h1>
+</header>
+
+<nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Products</a>
+    <a href="#">Orders</a>
+    <a href="#">Customers</a>
+    <a href="#">Settings</a>
+</nav>
+
+<div class="main-content">
+    <div class="card">
+        <h3>Product Management</h3>
+        <p>View and manage all the products.</p>
+        <button onclick="window.location.href='product-management.html'">Manage Products</button>
+    </div>
+
+    <div class="card">
+        <h3>Order Management</h3>
+        <p>View and manage all the orders.</p>
+        <button onclick="window.location.href='order-management.html'">Manage Orders</button>
+    </div>
+
+    <div class="card">
+        <h3>Customer Feedback</h3>
+        <p>View and manage customer reviews.</p>
+        <button onclick="window.location.href='customer-reviews.html'">Manage Reviews</button>
+    </div>
+
+    <div class="card">
+        <h3>Special Offers</h3>
+        <p>Manage offers and promotions for customers.</p>
+        <button onclick="window.location.href='offer-management.html'">Manage Offers</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Badar Sunnah Shop. All Rights Reserved.</p>
+</footer>
+
+</body>
+  </html>
